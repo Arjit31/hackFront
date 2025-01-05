@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactMarkdown from 'react-markdown';
 
 const App = () => {
   const [selectedOption, setSelectedOption] = useState("static image");
@@ -73,7 +74,7 @@ const App = () => {
 
   return (
     <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      <h1>API Request Dropdown</h1>
+      <h1>Social Media Analyzer</h1>
       <label htmlFor="options">Choose an option:</label>
       <select
         id="options"
@@ -89,7 +90,7 @@ const App = () => {
       <div style={{ marginTop: "20px" }}>
         {loading && <p>Loading...</p>}
         {error && <p style={{ color: "red" }}>Error: {error}</p>}
-        {apiResponse && <p>Response: {apiResponse}</p>}
+        {apiResponse && <ReactMarkdown>{`${apiResponse}`}</ReactMarkdown>}
       </div>
     </div>
   );
