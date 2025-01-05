@@ -8,7 +8,7 @@ const App = () => {
 
   const fetchData = async (inputValue) => {
     const url =
-      "https://api.langflow.astra.datastax.com/lf/f7875186-7f9a-4c16-9523-3a93771ab793/api/v1/run/e61d8b0b-5ce6-4d22-ae16-8f84f3162248?stream=false";
+      "https://your-proxy-service.onrender.com/lf/f7875186-7f9a-4c16-9523-3a93771ab793/api/v1/run/e61d8b0b-5ce6-4d22-ae16-8f84f3162248?stream=false";
 
     const headers = {
       "Content-Type": "application/json",
